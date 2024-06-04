@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  <style>
+    .container{
+
+    height: 300px;
+    width: 300px;
+    border: 5px solid black;
+    }
+    .box{
+        height: 80px;
+        width:  80px;
+        background-color: #f11717;
+        animation-name: circles;
+        animation-duration: 1s;
+        /* animation-delay: 2s; */
+        animation-iteration-count: infinite;
+         animation-direction: alternate-reverse;
+         animation-timing-function: ease-in;
+    }
+    @keyframes circles{
+        0%{
+           transform: translate(0, 0);
+        }
+        25%{
+         transform: translate(220px, 0px);
+        }
+        50%{
+          transform: translate(220px, 220px);
+        }
+        75%{
+            transform: translate(0px, 220px);
+        }
+    }
+  </style>
+     
+</head>
+<body>
+   <div class="container"> 
+   <div class="box">
+
+   </div>
+</div>
+</body>
+</html>
